@@ -1,0 +1,254 @@
+body {
+    background-image: url(imagen8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.9;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin: 50px auto;
+    font-style: italic;
+  }
+  
+  h1 {
+    color: #e74c3c;
+    animation: heartbeat 1s infinite alternate;
+    font-style: italic;
+  }
+  
+  h2 {
+    color:#e74c3c;
+    animation: heartbeat 1s infinite alternate;
+    font-style: italic;
+  }
+
+  h3 {
+    color: #e74c3c;
+    animation: heartbeat 1s infinite alternate;
+    font-style: italic;
+  }
+
+  @keyframes heartbeat {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+  }
+  
+  .content {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .video-container {
+    margin-top: 20px;
+    opacity: 0;
+    animation: slide-up 1s 1s forwards;
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .photo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 0;
+    animation: scale-in 1s 1.5s forwards;
+  }
+  
+  @keyframes scale-in {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  img {
+    margin: 0 10px;
+    max-width: 200px;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+  }
+  
+  .animated-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FDF7F7;
+    z-index: -1;
+    opacity: 0.8;
+    animation: animate-background 10s linear infinite;
+  }
+  
+  @keyframes animate-background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .moving-image {
+    position: fixed;
+    top: 20px;
+    right: 85px;
+    width: 170px;
+    height: 170px;
+    animation: move-image 5s infinite alternate;
+  }
+  
+  @keyframes move-image {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(40px) translateY(40px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .animated-background1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FDF7F7;
+    z-index: -1;
+    opacity: 0.8;
+    animation: animate-background1 10s linear infinite;
+  }
+  
+  @keyframes animate-background1 {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .moving-image1 {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    width: 170px;
+    height: 170px;
+    animation: move-image1 5s infinite alternate;
+  }
+  
+  @keyframes move-image1 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(40px) translateY(40px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .video-container1 {
+    margin-top: 20px;
+    opacity: 0;
+    animation: slide-up 1s 1s forwards;
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes heartAnimation {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  
+  .heart {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-image: url("imagen3.png");
+    background-size: cover;
+    animation: heartAnimation 5s infinite;
+  }
+  
+  .heart.left {
+    left: 10px;
+  }
+  
+  .heart.right {
+    right: 10px;
+  }
+
+  .video-container2 {
+    margin-top: 20px;
+    opacity: 0;
+    animation: slide-up 1s 1s forwards;
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  
